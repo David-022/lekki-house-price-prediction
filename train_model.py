@@ -13,7 +13,7 @@ import joblib
 
 
 # Load Dataset
-df = pd.read_csv("filtered_lagos_rent.csv")
+df = pd.read_csv("data/filtered_lagos_rent.csv")
 
 # Removing duplicates
 df_dup = df.copy().drop_duplicates()
