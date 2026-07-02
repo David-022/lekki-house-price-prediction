@@ -6,7 +6,7 @@ import plotly.graph_objs as go
 import joblib
 
 # Load dataset
-pd.read_csv("data/filtered_lekki_price.csv")
+data = pd.read_csv("data/filtered_lekki_price.csv")
 
 # Extract unique values for dropdown menus
 unique_neighborhood = data['Neighborhood'].unique()
