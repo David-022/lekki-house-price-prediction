@@ -6,13 +6,13 @@ import plotly.graph_objs as go
 import joblib
 
 # Load dataset
-data = pd.read_csv('filtered_lekki_price.csv')
+pd.read_csv("data/filtered_lekki_price.csv")
 
 # Extract unique values for dropdown menus
 unique_neighborhood = data['Neighborhood'].unique()
 
 # Load the trained model
-model = joblib.load('lagos_house_price_model.pkl')
+model = joblib.load("models/lagos_house_price_model.pkl")
 
 # File to store predictions
 PREDICTIONS_FILE = 'lagos_predictions.csv'
